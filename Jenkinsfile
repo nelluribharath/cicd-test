@@ -1,6 +1,6 @@
 pipeline {
 environment {
-registry = "pipeline {
+registry = "pipeline" {
 environment {
 registry = "YourDockerhubAccount/YourRepository"
 registryCredential = '	dockercreds'
