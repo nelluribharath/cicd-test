@@ -1,13 +1,15 @@
 pipeline{
-agent any
-stages{
-stage("Build"){
-steps{
-echo "build is working as excepted"
-}
-
-}
-}
-
-
+    agent any
+    stages{
+        stage("Clone"){
+            steps{
+                echo "clone scm successfully"
+            }
+        }
+        stage("Build"){
+            steps{
+                "sh date"
+            }
+        }
+    }
 }
